@@ -142,7 +142,7 @@ t3.to(".right-container", {
 
 
 t3.to(".left-img-container img", {
-    transform: "rotate(90deg)",
+    rotateZ: 400,
 }, "es")
 
 
@@ -151,7 +151,7 @@ t3.to(".left-img-container", {
 }, "sm")
 
 t3.to(".left-img-container img", {
-    transform: "rotate(90deg)",
+    rotateZ: 900,
 }, "sm")
 
 
@@ -251,24 +251,17 @@ var t5 = gsap.timeline({
 });
 
 
-// var t5 = gsap.timeline({
-//     scrollTrigger: {
-//         trigger: "#page-6",
-//         scroller: "body",
-//         markers: true,
-//         start: "10% 50%",
-//         end: "10% 40%",
-//         scrub: 2,
-//     },
-// });
-
+t5.to(".page-6btn", {
+    duration:2.5,
+    top: "85%",
+    transform: "translate(-50% ,-50%)",
+})
 
 t5.to(".image-container", {
     duration:2.5,
     ease: "power1.inOut",
     height: "100%",
 },"horizontal")
-
 
 t5.to(".contain-left", {
     duration:2.5,
@@ -289,8 +282,56 @@ t5.to(".contain-right", {
     transform: "translate(57%, 57%)",
 }, "horizontal")
 
-t5.to(".img-cont-div", {
+// t5.to(".img-cont-div", {
+//     ease: "power1.inOut",
+//     stagger: 0.1,
+//     transform: "translateY(-87.5%)",
+// })
+
+t5.to(".img-1", {
+    transform: "translateY(-100%)",
     ease: "power1.inOut",
-    stagger: 0.1,
-    transform: "translateY(-87.5%)",
+    duration:1,
 })
+
+t5.to(".img-2", {
+    transform: "translateY(-100%)",
+    ease: "power1.inOut",
+    duration:1,
+})
+t5.to(".img-3", {
+    transform: "translateY(-100%)",
+    ease: "power1.inOut",
+    duration:1,
+})
+t5.to(".img-4", {
+    transform: "translateY(-100%)",
+    ease: "power1.inOut",
+    duration:1,
+})
+
+t5.to(".img-5", {
+    transform: "translateY(-100%)",
+    ease: "power1.inOut",
+    duration:1,
+})
+t5.to(".img-6", {
+    transform: "translateY(-100%)",
+    ease: "power1.inOut",
+    duration:1,
+})
+t5.to(".img-7", {
+    transform: "translateY(-100%)",
+    ease: "power1.inOut",
+    duration:1,
+})
+
+t5.to(".img-8", {
+    transform: "translateY(-100%)",
+    ease: "power1.inOut",
+    duration:1,
+})
+
+
+// Page-7 Animation
+
