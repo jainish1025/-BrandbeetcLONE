@@ -205,6 +205,23 @@ page4herotextAnime();
 // Page-5
 
 
+var t7 = gsap.timeline({
+    scrollTrigger: {
+        trigger: "#page-5",
+        scroller: "body",
+        // markers: true,
+        start: "0% 70%",
+        end: "50% 40%",
+        scrub: 2,
+    },
+});
+
+t7.to("#pg-5-rounded-wrapper", {
+    height: "0%",
+    marginTop: "0px",
+})
+
+
 function page5herotextAnime() {
 
     const splitText = document.querySelectorAll(".p-5-reveal-text");
