@@ -333,5 +333,4 @@ t5.to(".img-8", {
 })
 
 
-// Page-7 Animation
 
