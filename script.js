@@ -202,24 +202,6 @@ function page4herotextAnime() {
 page4herotextAnime();
 
 
-// Page-5
-
-
-var t7 = gsap.timeline({
-    scrollTrigger: {
-        trigger: "#page-5",
-        scroller: "body",
-        // markers: true,
-        start: "0% 70%",
-        end: "50% 40%",
-        scrub: 2,
-    },
-});
-
-t7.to("#pg-5-rounded-wrapper", {
-    height: "0%",
-    marginTop: "0px",
-})
 
 
 function page5herotextAnime() {
@@ -252,7 +234,32 @@ page5herotextAnime();
 
 // page-5 animations
 
+// Page-5
+
+
 var t5 = gsap.timeline({
+    scrollTrigger: {
+        trigger: "#page-5",
+        scroller: "body",
+        start: "top 50%",
+        end: "10% 40%",
+        // markers: true,
+        scrub: 1,
+        ease: "power4.inOut",
+    },
+});
+
+t5.to("#pg-5-rounded-wrapper", {
+    height: "0px",
+})
+
+
+
+// page-6 animations
+
+// Page-6
+
+var t6 = gsap.timeline({
     scrollTrigger: {
         trigger: "#page-6",
         scroller: "body",
@@ -261,73 +268,60 @@ var t5 = gsap.timeline({
         // markers: true,
         stagger: 1,
         scrub: 2,
-        duration:2.5,
         ease: "power1.inOut",
         pin: true,
     },
 });
 
 
-t5.to(".page-6btn", {
+t6.to(".page-6btn", {
     duration:2.5,
     top: "85%",
     transform: "translate(-50% ,-50%)",
 })
 
-t5.to(".image-container", {
+t6.to(".image-container", {
     duration:2.5,
     ease: "power1.inOut",
     height: "100%",
 },"horizontal")
 
-t5.to(".contain-left", {
+t6.to(".contain-left", {
     duration:2.5,
     ease: "power1.inOut",
     transform: "translate(-62%, -62%)",
 }, "horizontal")
 
-t5.to(".contain-right", {
+t6.to(".contain-right", {
     duration:2.5,
     ease: "power1.inOut",
     transform: "translate(57%, 57%)",
 }, "horizontal")
 
 
-t5.to(".contain-right", {
-    duration:2.5,
-    ease: "power1.inOut",
-    transform: "translate(57%, 57%)",
-}, "horizontal")
-
-// t5.to(".img-cont-div", {
-//     ease: "power1.inOut",
-//     stagger: 0.1,
-//     transform: "translateY(-87.5%)",
-// })
-
-t5.to(".img-1", {
+t6.to(".img-1", {
     transform: "translateY(-100%)",
     ease: "power1.inOut",
     duration:1,
 })
 
-t5.to(".img-2", {
+t6.to(".img-2", {
     transform: "translateY(-100%)",
     ease: "power1.inOut",
     duration:1,
 })
-t5.to(".img-3", {
+t6.to(".img-3", {
     transform: "translateY(-100%)",
     ease: "power1.inOut",
     duration:1,
 })
-t5.to(".img-4", {
+t6.to(".img-4", {
     transform: "translateY(-100%)",
     ease: "power1.inOut",
     duration:1,
 })
 
-t5.to(".img-5", {
+t6.to(".img-5", {
     transform: "translateY(-100%)",
     ease: "power1.inOut",
     duration:1,
@@ -337,13 +331,13 @@ t5.to(".img-6", {
     ease: "power1.inOut",
     duration:1,
 })
-t5.to(".img-7", {
+t6.to(".img-7", {
     transform: "translateY(-100%)",
     ease: "power1.inOut",
     duration:1,
 })
 
-t5.to(".img-8", {
+t6.to(".img-8", {
     transform: "translateY(-100%)",
     ease: "power1.inOut",
     duration:1,
